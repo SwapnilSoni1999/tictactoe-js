@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac</title>
+	<link rel="stylesheet" type="text/css" href="css/style-main.css">
+
+	<script type="text/javascript" src="js/winning.js"></script>
+	<script type="text/javascript" src="js/ai.js"></script>
+	<script type="text/javascript">
+		var sectionSpace = [
+			0, 0, 0, 0, 0, 0, 0, 0, 0
+		];
+		var sectionSpaceString = [
+			"empty","empty","empty","empty","empty","empty","empty","empty","empty"
+		];
+
+		var condition,userInput,current;
+		var corner,randm;
+		randomise();
+		function checkEmpty(randm){
+			if(randm <= 9){
+				switch(sectionSpace[randm]){
+					case 0:{
+						condition = 1;
+						checkCondition();
+						break;
+					}
+					case 1:{
+						condition = 0;
+						randomise();
+						checkCondition();
+						break;
+					}
+				}
+			}
+			else{
+				console.log("else condition");
+				randomise();
+			}
+		}
+
+		//function begins
+		function addIt(userInput){
+			//sectionSpace[userInput] = 1;
+			switch(sectionSpace[userInput]){
+				case 0:{
+					sectionSpace[userInput] = 1;
+					if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+						addCross(userInput);
+						checkHorizontalCross();
+						checkVerticalCross();
+						checkDiagCross();
+						if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+							checkDraw();
+						}
+						checkEmpty(randm);
+					}
+
+					break;
+				}
+				case 1:{
+					break;
+				}
+			}
+		}
+
+		function addCircle(){
+			sectionSpace[randm] = 1;
+			var circleElem = document.createElement("img");
+			circleElem.setAttribute("src", "img/circle.png");
+			document.getElementById('sec' +randm).appendChild(circleElem);
+			sectionSpaceString[randm] = "circle";
+		}
+		function addCross(userInput){
+			sectionSpace[userInput] = 1;
+			var crossElem = document.createElement("img");
+			crossElem.setAttribute("src", "img/cross.png");
+			document.getElementById('sec' +userInput).appendChild(crossElem);
+			sectionSpaceString[userInput] = "cross";
+		}
+		function checkCondition(){
+			switch(condition){
+				case 1:{
+					if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+						addCircle();
+					}
+					checkHorizontalCircle();
+					checkVerticalCircle();
+					checkDiagCircle();
+					checkDraw();
+					break;
+				}
+				case 0:{
+					randomise();
+					checkEmpty(randm);
+					break;
+				}
+			}
+		}
+		function randomise(){
+			randm = Math.floor(Math.random() * 9);
+			corner = Math.floor(Math.random() * 4);
+		}
+	</script>
+</head>
+<body>
+	<div id="main">
+
+		<div id="upper">
+			<div id="sec0" onclick="addIt(0);">
+				
+			</div>
+			<div id="sec1" onclick="addIt(1);">
+				
+			</div>
+			<div id="sec2" onclick="addIt(2);">
+					
+			</div>
+		</div>
+
+		<div id="midd">
+			<div id="sec3" onclick="addIt(3);">
+			
+			</div>
+			<div id="sec4" onclick="addIt(4);">
+				
+			</div>
+			<div id="sec5" onclick="addIt(5);">
+				
+			</div>
+		</div>
+		<div id="bottm">
+			<div id="sec6" onclick="addIt(6);">	
+			
+			</div>
+			<div id="sec7" onclick="addIt(7);">
+			
+			</div>
+			<div id="sec8" onclick="addIt(8);">
+		</div>
+	</div>
+	<div id="results">
+		
+	</div>
+</body>
+</html>
