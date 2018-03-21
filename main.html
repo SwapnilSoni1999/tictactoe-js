@@ -87,7 +87,9 @@
 					checkHorizontalCircle();
 					checkVerticalCircle();
 					checkDiagCircle();
-					checkDraw();
+					if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+							checkDraw();
+					}
 					break;
 				}
 				case 0:{
