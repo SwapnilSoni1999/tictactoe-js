@@ -1,5 +1,5 @@
 # tictactoe-js
-A Simple 3x3 Tic Tac Toe Unbeatable Game
+A Simple 3x3 Tic Tac Toe Game
 
 How to use: 
 just clone 
