@@ -179,16 +179,18 @@ function checkUserPrb(){
 		}
 	}
 	function EOPcall(){
-		if(EOP == true){
-				if(sectionSpace[randm] == 0){
-					console.log("EOP randm", randm);
-					IsSideEmpty;
-					addCircle(j);
-				}
-				else{
-					EOPcall();
-				}
+		checkCornur();
+		checkSides();
+		checkCentur();
+
+		if(IsSideEmpty == true){
+			addCircle(j);
+		}
+		if(IsCornurEmpty == true){
+			addCircle(i);
+		}
+		if(IsCenterEmpty == true){
+			addCircle(4);
 		}
 	}
-	
 }
