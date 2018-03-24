@@ -179,18 +179,20 @@ function checkUserPrb(){
 		}
 	}
 	function EOPcall(){
-		checkCornur();
-		checkSides();
-		checkCentur();
+		if(EOP == true){
+			checkCornur();
+			checkSides();
+			checkCentur();
 
-		if(IsSideEmpty == true){
-			addCircle(j);
-		}
-		if(IsCornurEmpty == true){
-			addCircle(i);
-		}
-		if(IsCenterEmpty == true){
-			addCircle(4);
+			if(IsSideEmpty == true){
+				addCircle(j);
+			}
+			if(IsCornurEmpty == true){
+				addCircle(i);
+			}
+			if(IsCenterEmpty == true){
+				addCircle(4);
+			}
 		}
 	}
 }
