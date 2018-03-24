@@ -6,7 +6,11 @@
 
 	<script type="text/javascript" src="js/winning.js"></script>
 	<script type="text/javascript" src="js/ai.js"></script>
+	<script type="text/javascript" src="js/possibility.js"></script>
+
 	<script type="text/javascript">
+		var done = 0;
+
 		var sectionSpace = [
 			0, 0, 0, 0, 0, 0, 0, 0, 0
 		];
@@ -14,8 +18,8 @@
 			"empty","empty","empty","empty","empty","empty","empty","empty","empty"
 		];
 
-		var condition,userInput,current;
-		var corner,randm;
+		var condition,userInput,IsCornurEmpty,IsCenterEmpty,IsSideEmpty;
+		var corner,randm,valu;
 		randomise();
 		function checkEmpty(randm){
 			if(randm <= 9){
@@ -23,18 +27,19 @@
 					case 0:{
 						condition = 1;
 						checkCondition();
+						return condition;
 						break;
 					}
 					case 1:{
 						condition = 0;
 						randomise();
 						checkCondition();
+						return condition;
 						break;
 					}
 				}
 			}
 			else{
-				console.log("else condition");
 				randomise();
 			}
 		}
@@ -53,7 +58,8 @@
 						if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
 							checkDraw();
 						}
-						checkEmpty(randm);
+						setTimeout(function (){checkEmpty(randm);}, 1000);
+						//checkEmpty(randm);
 					}
 
 					break;
@@ -64,12 +70,16 @@
 			}
 		}
 
-		function addCircle(){
-			sectionSpace[randm] = 1;
-			var circleElem = document.createElement("img");
-			circleElem.setAttribute("src", "img/circle.png");
-			document.getElementById('sec' +randm).appendChild(circleElem);
-			sectionSpaceString[randm] = "circle";
+		function addCircle(valu){
+			if(done == 0){
+				sectionSpace[valu] = 1;
+				var circleElem = document.createElement("img");
+				circleElem.setAttribute("src", "img/circle.png");
+				document.getElementById('sec' +valu).appendChild(circleElem);
+				sectionSpaceString[valu] = "circle";
+
+				done += 1;
+			}
 		}
 		function addCross(userInput){
 			sectionSpace[userInput] = 1;
@@ -77,12 +87,19 @@
 			crossElem.setAttribute("src", "img/cross.png");
 			document.getElementById('sec' +userInput).appendChild(crossElem);
 			sectionSpaceString[userInput] = "cross";
+			done = 0;
 		}
 		function checkCondition(){
 			switch(condition){
 				case 1:{
 					if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
-						addCircle();
+						IsCornurEmpty = checkCornur();
+						IsSideEmpty = checkSides();
+						IsCenterEmpty = checkCentur();
+						(IsCenterEmpty ? IsCornurEmpty : IsSideEmpty)
+
+						console.log("check user probab...");
+						checkUserPrb();
 					}
 					checkHorizontalCircle();
 					checkVerticalCircle();
