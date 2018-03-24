@@ -8,6 +8,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "circle"){
 				addCircle(0);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -17,6 +18,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "cross"){
 				addCircle(0);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -29,6 +31,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "circle"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -38,6 +41,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "cross"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -50,6 +54,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "empty"){
 				addCircle(8);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -59,6 +64,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "empty"){
 				addCircle(8);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -71,6 +77,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "circle"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -80,6 +87,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "cross"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -91,6 +99,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "empty"){
 				addCircle(6);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -100,6 +109,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "empty"){
 				addCircle(6);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -111,6 +121,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "circle"){
 				addCircle(2);
 				applied = true;
+				EOP = false;
 			}
 		}
 		
@@ -121,6 +132,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "cross"){
 				addCircle(2);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -134,6 +146,7 @@ function dimaag(){
 			if(sectionSpaceString[2] == "empty"){
 				addCircle(2);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -143,6 +156,7 @@ function dimaag(){
 			if(sectionSpaceString[2] == "empty"){
 				addCircle(2);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -154,6 +168,7 @@ function dimaag(){
 			if(sectionSpaceString[2] == "circle"){
 				addCircle(1);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -163,6 +178,7 @@ function dimaag(){
 			if(sectionSpaceString[2] == "cross"){
 				addCircle(1);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -174,6 +190,7 @@ function dimaag(){
 			if(sectionSpaceString[2] == "circle"){
 				addCircle(0);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -183,6 +200,7 @@ function dimaag(){
 			if(sectionSpaceString[2] == "cross"){
 				addCircle(0);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -195,6 +213,7 @@ function dimaag(){
 			if(sectionSpaceString[5] == "empty"){
 				addCircle(5);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -204,6 +223,7 @@ function dimaag(){
 			if(sectionSpaceString[5] == "empty"){
 				addCircle(5);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -216,6 +236,7 @@ function dimaag(){
 			if(sectionSpaceString[5] == "circle"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -225,6 +246,7 @@ function dimaag(){
 			if(sectionSpaceString[5] == "cross"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -237,6 +259,7 @@ function dimaag(){
 			if(sectionSpaceString[5] == "circle"){
 				addCircle(3);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -246,6 +269,7 @@ function dimaag(){
 			if(sectionSpaceString[5] == "cross"){
 				addCircle(3);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -257,6 +281,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "empty"){
 				addCircle(8);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -266,6 +291,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "empty"){
 				addCircle(8);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -277,6 +303,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "circle"){
 				addCircle(7);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -286,6 +313,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "cross"){
 				addCircle(7);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -297,6 +325,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "circle"){
 				addCircle(6);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -306,6 +335,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "cross"){
 				addCircle(6);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -319,6 +349,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "empty"){
 				addCircle(6);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -328,6 +359,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "empty"){
 				addCircle(6);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -341,6 +373,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "circle"){
 				addCircle(3);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -350,6 +383,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "cross"){
 				addCircle(3);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -362,6 +396,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "circle"){
 				addCircle(0);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -371,6 +406,7 @@ function dimaag(){
 			if(sectionSpaceString[6] == "cross"){
 				addCircle(0);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -382,6 +418,7 @@ function dimaag(){
 			if(sectionSpaceString[7] == "empty"){
 				addCircle(7);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -391,6 +428,7 @@ function dimaag(){
 			if(sectionSpaceString[7] == "empty"){
 				addCircle(7);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -403,6 +441,7 @@ function dimaag(){
 			if(sectionSpaceString[7] == "circle"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -412,6 +451,7 @@ function dimaag(){
 			if(sectionSpaceString[7] == "cross"){
 				addCircle(4);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -423,6 +463,7 @@ function dimaag(){
 			if(sectionSpaceString[7] == "circle"){
 				addCircle(1);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -432,6 +473,7 @@ function dimaag(){
 			if(sectionSpaceString[7] == "cross"){
 				addCircle(1);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -443,6 +485,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "empty"){
 				addCircle(8);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -452,6 +495,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "empty"){
 				addCircle(8);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -463,6 +507,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "circle"){
 				addCircle(5);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -472,6 +517,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "cross"){
 				addCircle(5);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -483,6 +529,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "circle"){
 				addCircle(2);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}
@@ -492,6 +539,7 @@ function dimaag(){
 			if(sectionSpaceString[8] == "cross"){
 				addCircle(2);
 				applied = true;
+				EOP = false;
 			}
 		}
 	}

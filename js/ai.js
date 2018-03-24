@@ -175,7 +175,7 @@ function checkUserPrb(){
 		if(filledCount > 1){
 			//check for possibility 
 			dimaag();
-			if(EOP){
+			if(EOP == true){
 				randomise();
 				if(sectionSpace[randm] == 0){
 					console.log("EOP randm", randm);

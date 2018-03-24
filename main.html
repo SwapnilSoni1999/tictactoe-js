@@ -58,8 +58,11 @@
 						if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
 							checkDraw();
 						}
+
+						for(var i=0; i<=8; i++){
+							document.getElementById('sec'+i).disabled = true;
+						}
 						setTimeout(function (){checkEmpty(randm);}, 1000);
-						//checkEmpty(randm);
 					}
 
 					break;
@@ -68,6 +71,7 @@
 					break;
 				}
 			}
+			
 		}
 
 		function addCircle(valu){
@@ -79,6 +83,9 @@
 				sectionSpaceString[valu] = "circle";
 
 				done += 1;
+				for(var i=0; i<=8; i++){
+							document.getElementById('sec'+i).disabled = false;
+				}
 			}
 		}
 		function addCross(userInput){
@@ -126,36 +133,38 @@
 	<div id="main">
 
 		<div id="upper">
-			<div id="sec0" onclick="addIt(0);">
+			<button id="sec0" onclick="addIt(0);" >
 				
-			</div>
-			<div id="sec1" onclick="addIt(1);">
+			</button>
+			<button id="sec1" onclick="addIt(1);">
 				
-			</div>
-			<div id="sec2" onclick="addIt(2);">
+			</button>
+			<button id="sec2" onclick="addIt(2);">
 					
-			</div>
+			</button>
 		</div>
 
 		<div id="midd">
-			<div id="sec3" onclick="addIt(3);">
+			<button id="sec3" onclick="addIt(3);">
 			
-			</div>
-			<div id="sec4" onclick="addIt(4);">
+			</button>
+			<button id="sec4" onclick="addIt(4);">
 				
-			</div>
-			<div id="sec5" onclick="addIt(5);">
+			</button>
+			<button id="sec5" onclick="addIt(5);">
 				
-			</div>
+			</button>
 		</div>
 		<div id="bottm">
-			<div id="sec6" onclick="addIt(6);">	
+			<button id="sec6" onclick="addIt(6);">	
 			
-			</div>
-			<div id="sec7" onclick="addIt(7);">
+			</button>
+			<button id="sec7" onclick="addIt(7);">
 			
-			</div>
-			<div id="sec8" onclick="addIt(8);">
+			</button>
+			<button id="sec8" onclick="addIt(8);">
+
+			</button>
 		</div>
 	</div>
 	<div id="results">
