@@ -1,5 +1,5 @@
 var i=0,j=0;
-var EOP=false;
+var EOP;
 function checkCornur(){
 	switch(i){
 		case 0:{
@@ -175,15 +175,20 @@ function checkUserPrb(){
 		if(filledCount > 1){
 			//check for possibility 
 			dimaag();
-			if(EOP == true){
-				randomise();
-				if(sectionSpace[randm] == 0){
-					console.log("EOP randm", randm);
-					addCircle(randm);
-				}
-			}
+			EOPcall();
 		}
 	}
-
+	function EOPcall(){
+		if(EOP == true){
+				if(sectionSpace[randm] == 0){
+					console.log("EOP randm", randm);
+					IsSideEmpty;
+					addCircle(j);
+				}
+				else{
+					EOPcall();
+				}
+		}
+	}
 	
 }
