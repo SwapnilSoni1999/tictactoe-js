@@ -1,5 +1,5 @@
 # tictactoe-js
-A Simple Tic Tac Toe Game without AI(for now)
+A Simple 3x3 Tic Tac Toe Unbeatable Game
 
 How to use: 
 just clone 
@@ -7,4 +7,5 @@ just clone
 git clone https://github.com/SwapnilSoni1999/tictactoe-js tictactoe
 cd tictactoe
 ~~~
+
 and run **main.html** to start
