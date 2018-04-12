@@ -8,4 +8,5 @@ git clone https://github.com/SwapnilSoni1999/tictactoe-js tictactoe
 cd tictactoe
 ~~~
 
-and run **main.html** to start
+# want to play? 
+visit https://tictactoe.github.io
